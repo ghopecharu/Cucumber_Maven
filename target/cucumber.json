@@ -1,0 +1,315 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-24T07:29:41.909Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2857339100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify that the user is able to create new account",
+        "description": "",
+        "id": "fb-signup-feature-to-validate-the-add-new-user-functionality;verify-that-the-user-is-able-to-create-new-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 38400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2626850500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User has launched the FB application",
+            "match": {
+              "location": "FBSignUpSteps.user_has_launched_the_fb_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177163000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Create New Account link",
+            "match": {
+              "location": "FBSignUpSteps.user_clicks_on_create_new_account_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 717900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"Raj\" \"Sharma\" \"9999999999\" \"abc123@abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raj",
+                  "offset": 13
+                },
+                {
+                  "val": "Sharma",
+                  "offset": 19
+                },
+                {
+                  "val": "9999999999",
+                  "offset": 28
+                },
+                {
+                  "val": "abc123@abc",
+                  "offset": 41
+                }
+              ],
+              "location": "FBSignUpSteps.user_enters_something_something_something_something(String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 748300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User selects \"8\" \"12\" \"1990\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 14
+                },
+                {
+                  "val": "12",
+                  "offset": 18
+                },
+                {
+                  "val": "1990",
+                  "offset": 23
+                }
+              ],
+              "location": "FBSignUpSteps.user_selects_something_something_something(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 537100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on SignUp button",
+            "match": {
+              "location": "FBSignUpSteps.user_clicks_on_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to see success message",
+            "match": {
+              "location": "FBSignUpSteps.user_should_be_able_to_see_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FBSignUp"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-24T07:29:47.618Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1409093100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify that the user is able to create new account using cucumber datatable",
+        "description": "",
+        "id": "fb-signup-feature-to-validate-the-add-new-user-functionality;verify-that-the-user-is-able-to-create-new-account-using-cucumber-datatable",
+        "after": [
+          {
+            "result": {
+              "duration": 90800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3021681900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has launched the FB application",
+            "match": {
+              "location": "FBSignUpSteps.user_has_launched_the_fb_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 251421600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on Create New Account link",
+            "match": {
+              "location": "FBSignUpSteps.user_clicks_on_create_new_account_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2897674800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User creates new account",
+            "match": {
+              "location": "FBSignUpSteps.user_creates_new_account(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "Raj"
+                ]
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Sharma"
+                ]
+              },
+              {
+                "cells": [
+                  "MobileNum",
+                  "999999999"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "anc123@xyz"
+                ]
+              },
+              {
+                "cells": [
+                  "Month",
+                  "9"
+                ]
+              },
+              {
+                "cells": [
+                  "Date",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "Year",
+                  "1990"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 848800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User clicks on SignUp button",
+            "match": {
+              "location": "FBSignUpSteps.user_clicks_on_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2037400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should be able to see success message",
+            "match": {
+              "location": "FBSignUpSteps.user_should_be_able_to_see_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FBSignUp"
+          },
+          {
+            "name": "@DataTable"
+          }
+        ]
+      }
+    ],
+    "name": "FB SignUp Feature to validate the add new user functionality",
+    "description": "",
+    "id": "fb-signup-feature-to-validate-the-add-new-user-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/FbSignUp.feature",
+    "tags": [
+      {
+        "name": "@FBSignUp",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

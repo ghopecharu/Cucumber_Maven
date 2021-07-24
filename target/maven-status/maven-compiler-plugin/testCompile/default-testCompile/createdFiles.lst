@@ -1,0 +1,5 @@
+stepDefs\CalculatorSteps.class
+stepDefs\TestRunner.class
+stepDefs\BaseClass.class
+stepDefs\LoginSteps.class
+stepDefs\FBSignUpSteps.class
